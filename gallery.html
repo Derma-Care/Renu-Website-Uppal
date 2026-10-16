@@ -38,14 +38,14 @@
       <div class="top-bar">
         <div class="container top-bar-inner">
           <div class="top-bar-left">
-            <a href="tel:+919182258839" class="top-bar-link">
+            <a href="tel:+917981598509" class="top-bar-link">
               <i class="fa-solid fa-phone"></i>
-              <span>+91 91822 58839</span>
+              <span>+91 79815 98509</span>
             </a>
             <span class="top-bar-divider">|</span>
-            <div class="top-bar-location">
+            <div class="top-bar-location" data-clinic-field="topBarLocation">
               <i class="fa-solid fa-location-dot"></i>
-              <span>Boduppal, Hyderabad (Beside LifeSpring Hospital)</span>
+              <span>Medipally, Hyderabad (Opposite Srikara &amp; Miracle Hospitals)</span>
             </div>
           </div>
           <div class="top-bar-right">
@@ -190,11 +190,11 @@
           <button class="btn btn-primary btn-block" data-open-booking-modal>
             <i class="fa-regular fa-calendar-check"></i> Book Consultation
           </button>
-          <a href="tel:+919182258839" class="btn btn-secondary btn-block">
-            <i class="fa-solid fa-phone"></i> Call +91 91822 58839
+          <a href="tel:+917981598509" class="btn btn-secondary btn-block">
+            <i class="fa-solid fa-phone"></i> Call +91 79815 98509
           </a>
           <a
-            href="https://wa.me/919182258839?text=Hello+Dr.+Renu's+Clinic!+I+want+to+book+an+appointment."
+            href="https://wa.me/917981598509?text=Hello+Dr.+Renu's+Clinic!+I+want+to+book+an+appointment."
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-whatsapp btn-block"
@@ -204,9 +204,8 @@
         </div>
 
         <div class="drawer-info">
-          <div>
-            <i class="fa-solid fa-location-dot"></i> Laxma Reddy Residency,
-            Boduppal
+          <div data-clinic-short-address>
+            <i class="fa-solid fa-location-dot"></i> <span data-clinic-field="shortAddress">Shop No. 2, Sanjana Amrutha Nilayam, Om Vihar Colony, Medipally, Hyderabad 500098</span>
           </div>
           <div>
             <i class="fa-solid fa-clock"></i> Mon-Sat: 9am-9pm | Sun: 9am-1pm
@@ -325,7 +324,8 @@
                   <i class="fa-brands fa-google"></i> View Photos on Google
                 </a>
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0"
+                  href="https://www.google.com/maps/dir/?api=1&destination=Dr.Renu%27s+physiotherapy+%26+chiropractic+clinic%2C+Shop+NO.+2%2C+sanjana+amrutha+nilayam%2C+Plot+No.10-90%2F2%2C+opposite+to+srikara+%26+miracle+hospitals%2C+Om+Vihar+Colony%2C+Medipally%2C+Canara+Nagar%2C+Hyderabad%2C+Telangana+500098&destination_place_id=ChIJLTPjl6WfyzsR2OVpoA9UA8M"
+                  data-clinic-field="directionsUrl"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-secondary"
@@ -441,25 +441,30 @@
                 ><i class="fa-solid fa-star"></i>
               </div>
               <span
-                ><strong><span data-google-rating>4.8</span>★</strong> (<span data-google-review-count>129+</span> Verified Reviews on Google)</span
+                ><strong><span data-google-rating>4.8</span>★</strong> (<span
+                  data-google-review-count
+                  >129+</span
+                >
+                Verified Reviews on Google)</span
               >
             </div>
             <div class="footer-social-links">
               <a
-                href="https://wa.me/919182258839"
+                href="https://wa.me/917981598509"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 ><i class="fa-brands fa-whatsapp"></i
               ></a>
               <a
-                href="https://maps.google.com/?cid=2154363805800894110"
+                href="https://maps.google.com/?cid=14052167688418616792"
+                data-clinic-field="mapUrl"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Google Maps Location"
                 ><i class="fa-solid fa-map-location-dot"></i
               ></a>
-              <a href="tel:+919182258839" aria-label="Phone Call"
+              <a href="tel:+917981598509" aria-label="Phone Call"
                 ><i class="fa-solid fa-phone"></i
               ></a>
             </div>
@@ -526,24 +531,20 @@
           <div class="footer-col">
             <h4 class="footer-heading">Clinic Address</h4>
             <address class="footer-contact-info">
-              <p>
-                <i class="fa-solid fa-location-dot"></i> LAXMAREDDY RESIDENCY,
-                Laxma reddy residency, Sai baba temple, 55-5/7/G1, road, beside
-                Life Spring Hospitals, opposite to Studioseven family saloon,
-                Buddha Nagar Colony, Mallikarjuna Nagar, Boduppal, Hyderabad,
-                Telangana 500092
+              <p data-clinic-address>
+                <i class="fa-solid fa-location-dot"></i> <span data-clinic-field="fullAddress">Shop NO. 2, sanjana amrutha nilayam, Plot No.10-90/2, opposite to srikara &amp; miracle hospitals, Om Vihar Colony, Medipally, Canara Nagar, Hyderabad, Telangana 500098</span>
               </p>
               <p>
                 <i class="fa-solid fa-phone"></i>
-                <a href="tel:+919182258839">+91 91822 58839</a>
+                <a href="tel:+917981598509">+91 79815 98509</a>
               </p>
               <p>
                 <i class="fa-brands fa-whatsapp"></i>
                 <a
-                  href="https://wa.me/919182258839"
+                  href="https://wa.me/917981598509"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >+91 91822 58839</a
+                  >+91 79815 98509</a
                 >
               </p>
               <p>
@@ -552,7 +553,8 @@
               </p>
             </address>
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0"
+              href="https://www.google.com/maps/dir/?api=1&destination=Dr.Renu%27s+physiotherapy+%26+chiropractic+clinic%2C+Shop+NO.+2%2C+sanjana+amrutha+nilayam%2C+Plot+No.10-90%2F2%2C+opposite+to+srikara+%26+miracle+hospitals%2C+Om+Vihar+Colony%2C+Medipally%2C+Canara+Nagar%2C+Hyderabad%2C+Telangana+500098&destination_place_id=ChIJLTPjl6WfyzsR2OVpoA9UA8M"
+              data-clinic-field="directionsUrl"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-secondary btn-sm"
@@ -583,12 +585,12 @@
 
     <!-- Mobile Sticky Bottom Action Bar -->
     <div class="mobile-sticky-bar">
-      <a href="tel:+919182258839" class="sticky-action-item">
+      <a href="tel:+917981598509" class="sticky-action-item">
         <i class="fa-solid fa-phone"></i>
         <span>Call</span>
       </a>
       <a
-        href="https://wa.me/919182258839?text=Hello+Dr.+Renu's+Clinic!+I+want+to+book+an+appointment"
+        href="https://wa.me/917981598509?text=Hello+Dr.+Renu's+Clinic!+I+want+to+book+an+appointment"
         target="_blank"
         rel="noopener noreferrer"
         class="sticky-action-item highlight-wa"
@@ -601,7 +603,8 @@
         <span>Book</span>
       </button>
       <a
-        href="https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0"
+        href="https://maps.google.com/?cid=14052167688418616792"
+        data-clinic-field="mapUrl"
         target="_blank"
         rel="noopener noreferrer"
         class="sticky-action-item"

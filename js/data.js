@@ -5,10 +5,10 @@ const CLINIC_DATA = {
   name: "DR. RENU'S CHIROPRACTIC / OSTEOPATHY & PHYSIOTHERAPY CLINIC",
   shortName: "Dr. Renu's Chiropractic & Physiotherapy",
   tagline: "Best Chiropractor & Physiotherapy Clinic in Boduppal, Hyderabad",
-  phone: "9182258839",
-  phoneFormatted: "+91 91822 58839",
-  whatsapp: "919182258839",
-  whatsappBaseUrl: "https://wa.me/919182258839",
+  phone: "7981598509",
+  phoneFormatted: "+91 79815 98509",
+  whatsapp: "917981598509",
+  whatsappBaseUrl: "https://wa.me/917981598509",
   rating: "4.8",
   reviewCount: "128+",
   hours: {
@@ -58,22 +58,31 @@ const CLINIC_DATA = {
     },
   },
   location: {
-    city: "Hyderabad, Telangana, 500092",
-    area: "Boduppal, Hyderabad",
+    city: "Hyderabad, Telangana 500098",
+    pincode: "500098",
+    area: "Medipally, Canara Nagar, Hyderabad",
+    topBarLocation: "Medipally, Hyderabad (Opposite Srikara & Miracle Hospitals)",
+    shortAddress:
+      "Shop No. 2, Sanjana Amrutha Nilayam, Om Vihar Colony, Medipally, Hyderabad 500098",
     fullAddress:
-      "LAXMAREDDY RESIDENCY, Laxma reddy residency, Sai baba temple, 55-5/7/G1, road, beside Life Spring Hospitals, opposite to Studioseven family saloon, Buddha Nagar Colony, Mallikarjuna Nagar, Boduppal, Hyderabad, Telangana 500092",
-    placeId: "ChIJUfy4iwSfyzsRno64kXfW5R0",
-    cid: "2154363805800894110",
-    mapUrl: "https://maps.google.com/?cid=2154363805800894110",
-    placeUrl: "https://maps.google.com/?cid=2154363805800894110",
+      "Shop NO. 2, sanjana amrutha nilayam, Plot No.10-90/2, opposite to srikara & miracle hospitals, Om Vihar Colony, Medipally, Canara Nagar, Hyderabad, Telangana 500098",
+    landmark: "opposite to srikara & miracle hospitals",
+    colony: "Om Vihar Colony, Medipally, Canara Nagar",
+    plotNo: "Plot No.10-90/2",
+    building: "sanjana amrutha nilayam",
+    shopNo: "Shop NO. 2",
+    placeId: "ChIJLTPjl6WfyzsR2OVpoA9UA8M",
+    cid: "14052167688418616792",
+    mapUrl: "https://maps.google.com/?cid=14052167688418616792",
+    placeUrl: "https://maps.google.com/?cid=14052167688418616792",
     reviewsUrl:
-      "https://www.google.com/maps/place//data=!4m4!3m3!1s0x3bcb9f048bb8fc51:0x1de5d67791b88e9e!9m1!1b1",
+      "https://www.google.com/maps/place//data=!4m4!3m3!1s0x3bcb9fa597e3332d:0xc303540fa069e5d8!9m1!1b1",
     photosUrl:
-      "https://www.google.com/maps/place//data=!4m3!3m2!1s0x3bcb9f048bb8fc51:0x1de5d67791b88e9e!10e5",
+      "https://www.google.com/maps/place//data=!4m3!3m2!1s0x3bcb9fa597e3332d:0xc303540fa069e5d8!10e5",
     directionsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0",
+      "https://www.google.com/maps/dir/?api=1&destination=Dr.Renu%27s+physiotherapy+%26+chiropractic+clinic%2C+Shop+NO.+2%2C+sanjana+amrutha+nilayam%2C+Plot+No.10-90%2F2%2C+opposite+to+srikara+%26+miracle+hospitals%2C+Om+Vihar+Colony%2C+Medipally%2C+Canara+Nagar%2C+Hyderabad%2C+Telangana+500098&destination_place_id=ChIJLTPjl6WfyzsR2OVpoA9UA8M",
     embedUrl:
-      "https://maps.google.com/maps?q=DR.RENU%27S%20CHIROPRACTIC%20%2F%20OSTEOPATHY%20%26%20PHYSIOTHERAPY%20CLINIC%2C%2055-5%2F7%2FG1%20LAXMAREDDY%20RESIDENCY%20Sai%20baba%20temple%20road%20Laxma%20reddy%20residency%2C%20beside%20Life%20Spring%20Hospitals%2C%20opposite%20Opposite%20to%20Studioseven%20family%20saloon%2C%20Hyderabad%2C%20Telangana%2C%20500092&output=embed",
+      "https://maps.google.com/maps?q=Shop+NO.+2,+sanjana+amrutha+nilayam,+Plot+No.10-90/2,+opposite+to+srikara+%26+miracle+hospitals,+Om+Vihar+Colony,+Medipally,+Canara+Nagar,+Hyderabad,+Telangana+500098&output=embed",
   },
   social: {
     instagram: "https://www.instagram.com/dr_bharath_adla",
@@ -112,7 +121,7 @@ const CLINIC_DATA = {
     },
   ],
   googleApiKey: "AIzaSyAxYt-gTC4g6hj0W9THHBDs4HoAixXujc8",
-  googlePlaceId: "ChIJUfy4iwSfyzsRno64kXfW5R0",
+  googlePlaceId: "ChIJLTPjl6WfyzsR2OVpoA9UA8M",
   services: [
     {
       id: "service-1",
@@ -2584,13 +2593,13 @@ const CLINIC_DATA = {
     {
       question: "Where is the clinic located in Hyderabad?",
       answer:
-        "We are located at LAXMAREDDY RESIDENCY, Laxma reddy residency, Sai baba temple, 55-5/7/G1, road, beside Life Spring Hospitals, opposite to Studioseven family saloon, Buddha Nagar Colony, Mallikarjuna Nagar, Boduppal, Hyderabad, Telangana 500092. Free parking is available nearby.",
+        "We are located at Shop NO. 2, sanjana amrutha nilayam, Plot No.10-90/2, opposite to srikara & miracle hospitals, Om Vihar Colony, Medipally, Canara Nagar, Hyderabad, Telangana 500098. Free parking is available nearby.",
     },
     {
       question:
         "What are your clinic opening hours and do you accept walk-ins?",
       answer:
-        "Our clinic is open Monday through Saturday from 9:00 AM to 9:00 PM, and on Sundays from 9:00 AM to 1:00 PM. While walk-ins are welcomed, we strongly recommend booking a prior appointment via call or WhatsApp at +91 91822 58839 to avoid waiting times.",
+        "Our clinic is open Monday through Saturday from 9:00 AM to 9:00 PM, and on Sundays from 9:00 AM to 1:00 PM. While walk-ins are welcomed, we strongly recommend booking a prior appointment via call or WhatsApp at +91 79815 98509 to avoid waiting times.",
     },
     {
       question: "Is chiropractic treatment safe and does it hurt?",

@@ -2,6 +2,7 @@
 // Master Client-side Logic & Interactions
 
 document.addEventListener('DOMContentLoaded', () => {
+  initClinicCommonData();
   initLiveHoursStatus();
   initHeaderScroll();
   initMobileNavigation();
@@ -14,6 +15,127 @@ document.addEventListener('DOMContentLoaded', () => {
   initServiceCards();
   initAnatomyNavigator();
 });
+
+/* ==========================================================================
+   0. Clinic Common Data Hydration (Single Source of Truth)
+   ========================================================================== */
+function initClinicCommonData() {
+  if (typeof CLINIC_DATA === 'undefined' || !CLINIC_DATA.location) return;
+  const loc = CLINIC_DATA.location;
+
+  // 1. Full Clinic Address elements
+  const fullAddressTargets = document.querySelectorAll(
+    '[data-clinic-field="fullAddress"], [data-clinic-address], [data-clinic-full-address]'
+  );
+  fullAddressTargets.forEach(el => {
+    const spanTarget = el.querySelector('[data-clinic-text="fullAddress"]');
+    if (spanTarget) {
+      spanTarget.textContent = loc.fullAddress;
+    } else {
+      const icon = el.querySelector('i');
+      if (icon) {
+        el.innerHTML = `${icon.outerHTML} ${loc.fullAddress}`;
+      } else {
+        el.textContent = loc.fullAddress;
+      }
+    }
+  });
+
+  // 2. Short / Drawer Address elements
+  const shortAddressTargets = document.querySelectorAll(
+    '[data-clinic-field="shortAddress"], [data-clinic-short-address]'
+  );
+  shortAddressTargets.forEach(el => {
+    const spanTarget = el.querySelector('[data-clinic-text="shortAddress"]');
+    if (spanTarget) {
+      spanTarget.textContent = loc.shortAddress;
+    } else {
+      const icon = el.querySelector('i');
+      if (icon) {
+        el.innerHTML = `${icon.outerHTML} ${loc.shortAddress}`;
+      } else {
+        el.textContent = loc.shortAddress;
+      }
+    }
+  });
+
+  // 3. Top Notification Bar Location
+  const topBarTargets = document.querySelectorAll(
+    '[data-clinic-field="topBarLocation"], .top-bar-location span'
+  );
+  topBarTargets.forEach(el => {
+    if (loc.topBarLocation) {
+      el.textContent = loc.topBarLocation;
+    }
+  });
+
+  // 4. Fallback: Navigation Drawers
+  document.querySelectorAll('.drawer-info p').forEach(p => {
+    if (p.querySelector('i.fa-location-dot')) {
+      const icon = p.querySelector('i.fa-location-dot');
+      p.innerHTML = `${icon.outerHTML} ${loc.shortAddress || loc.fullAddress}`;
+    }
+  });
+
+  // 5. Fallback: Footer Address blocks
+  document.querySelectorAll('.footer-contact-info p').forEach(p => {
+    if (p.querySelector('i.fa-location-dot')) {
+      const icon = p.querySelector('i.fa-location-dot');
+      p.innerHTML = `${icon.outerHTML} ${loc.fullAddress}`;
+    }
+  });
+
+  // 6. Directions Link Buttons
+  const directionsTargets = document.querySelectorAll(
+    '[data-clinic-field="directionsUrl"], [data-clinic-directions], a[href*="destination="]'
+  );
+  directionsTargets.forEach(el => {
+    if (el.tagName === 'A' && loc.directionsUrl) {
+      el.setAttribute('href', loc.directionsUrl);
+    }
+  });
+
+  // 7. Google Maps / Place Links (Sticky Bar, Contact Page Map Buttons)
+  const mapTargets = document.querySelectorAll(
+    '[data-clinic-field="mapUrl"], [data-clinic-map-url], .mobile-sticky-bar a[href*="maps.google.com"], .contact-actions-stack a[href*="maps.google.com"]'
+  );
+  mapTargets.forEach(el => {
+    if (el.tagName === 'A' && loc.mapUrl) {
+      el.setAttribute('href', loc.mapUrl);
+    }
+  });
+
+  // 8. Embedded Google Map iframe
+  const embedTargets = document.querySelectorAll(
+    '[data-clinic-field="embedUrl"], [data-clinic-embed-map], .map-embed-wrapper iframe'
+  );
+  embedTargets.forEach(el => {
+    if (el.tagName === 'IFRAME' && loc.embedUrl) {
+      el.setAttribute('src', loc.embedUrl);
+    }
+  });
+
+  // 9. Clinic Phone Call Links
+  const phone = CLINIC_DATA.phone || '7981598509';
+  const phoneFormatted = CLINIC_DATA.phoneFormatted || '+91 79815 98509';
+  const whatsapp = CLINIC_DATA.whatsapp || '917981598509';
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+    el.setAttribute('href', `tel:+91${phone}`);
+    const span = el.querySelector('span');
+    if (span && (span.textContent.includes('91822') || span.textContent.includes('79815') || span.textContent.includes('+91'))) {
+      span.textContent = phoneFormatted;
+    }
+  });
+
+  // 10. WhatsApp Links
+  document.querySelectorAll('a[href*="wa.me/"]').forEach(el => {
+    const href = el.getAttribute('href');
+    if (href) {
+      el.setAttribute('href', href.replace(/wa\.me\/(91)?[0-9]+/, `wa.me/${whatsapp}`));
+    }
+  });
+}
 
 /* ==========================================================================
    1. Live Clinic Opening Hours Status
@@ -112,7 +234,7 @@ function initLiveHoursStatus() {
   if (dialogLiveRow && isHolidayClosed && !document.querySelector('.holiday-notice-banner')) {
     const banner = document.createElement('div');
     banner.className = 'holiday-notice-banner';
-    banner.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i><div><strong>Notice:</strong> The clinic is ${holidayReason}. Regular timings resume tomorrow. For urgent inquiries, please WhatsApp us at +91 91822 58839.</div>`;
+    banner.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i><div><strong>Notice:</strong> The clinic is ${holidayReason}. Regular timings resume tomorrow. For urgent inquiries, please WhatsApp us at +91 79815 98509.</div>`;
     dialogLiveRow.parentNode.insertBefore(banner, dialogLiveRow.nextSibling);
   }
 
@@ -483,7 +605,7 @@ function initBookingForms() {
       const messageLines = [
         `*🏥 New Consultation Appointment Request*`,
         `*Dr. Renu's Chiropractic, Osteopathy & Physiotherapy Clinic*`,
-        `📍 Boduppal, Hyderabad | 📞 +91 91822 58839`,
+        `📍 Medipally, Hyderabad | 📞 +91 79815 98509`,
         `──────────────────────────`,
         `👤 *Patient Name:* ${name}`,
         `📱 *Mobile / WhatsApp:* ${phone}`,
@@ -497,7 +619,7 @@ function initBookingForms() {
       ];
 
       const fullMessage = messageLines.join('\n');
-      const clinicWhatsAppNumber = '919182258839'; // Country code 91 + 10-digit mobile 9182258839
+      const clinicWhatsAppNumber = (typeof CLINIC_DATA !== 'undefined' && CLINIC_DATA.whatsapp) ? CLINIC_DATA.whatsapp : '917981598509';
       const waUrl = `https://wa.me/${clinicWhatsAppNumber}?text=${encodeURIComponent(fullMessage)}`;
 
       // Open WhatsApp in a new tab / app
@@ -633,7 +755,7 @@ function initServiceCards() {
       }
 
       if (modalEnquireBtn) {
-        modalEnquireBtn.href = `https://wa.me/919182258839?text=Hi!+I+want+to+know+more+about+${encodeURIComponent(service.title)}+at+Dr.+Renu's+Clinic`;
+        modalEnquireBtn.href = `https://wa.me/917981598509?text=Hi!+I+want+to+know+more+about+${encodeURIComponent(service.title)}+at+Dr.+Renu's+Clinic`;
       }
 
       if (typeof serviceDetailModal.showModal === 'function') {
@@ -921,7 +1043,7 @@ function initAnatomyNavigator() {
     }
 
     if (whatsappBtn) {
-      whatsappBtn.href = `https://wa.me/919182258839?text=${encodeURIComponent(data.whatsappMsg)}`;
+      whatsappBtn.href = `https://wa.me/917981598509?text=${encodeURIComponent(data.whatsappMsg)}`;
     }
 
     // 6. Optional Smooth Scroll if clicked from a service card

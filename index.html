@@ -57,14 +57,17 @@
       <div class="top-bar">
         <div class="container top-bar-inner">
           <div class="top-bar-left">
-            <a href="tel:+919182258839" class="top-bar-link">
+            <a href="tel:+917981598509" class="top-bar-link">
               <i class="fa-solid fa-phone"></i>
-              <span>+91 91822 58839</span>
+              <span>+91 79815 98509</span>
             </a>
             <span class="top-bar-divider">|</span>
-            <div class="top-bar-location">
+            <div class="top-bar-location" data-clinic-field="topBarLocation">
               <i class="fa-solid fa-location-dot"></i>
-              <span>Boduppal, Hyderabad (Beside LifeSpring Hospital)</span>
+              <span
+                >Medipally, Hyderabad (Opposite Srikara &amp; Miracle
+                Hospitals)</span
+              >
             </div>
           </div>
           <div class="top-bar-right">
@@ -206,11 +209,11 @@
           <button class="btn btn-primary btn-block" data-open-booking-modal>
             <i class="fa-regular fa-calendar-check"></i> Book Consultation
           </button>
-          <a href="tel:+919182258839" class="btn btn-secondary btn-block">
-            <i class="fa-solid fa-phone"></i> Call +91 91822 58839
+          <a href="tel:+917981598509" class="btn btn-secondary btn-block">
+            <i class="fa-solid fa-phone"></i> Call +91 79815 98509
           </a>
           <a
-            href="https://wa.me/919182258839"
+            href="https://wa.me/917981598509"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-whatsapp btn-block"
@@ -220,9 +223,12 @@
         </div>
 
         <div class="drawer-info">
-          <p>
-            <i class="fa-solid fa-location-dot"></i> Laxma Reddy Residency, Sai
-            Baba Temple Rd, Boduppal, Hyderabad 500092
+          <p class="drawer-address" data-clinic-short-address>
+            <i class="fa-solid fa-location-dot"></i>
+            <span data-clinic-field="shortAddress"
+              >Shop No. 2, Sanjana Amrutha Nilayam, Om Vihar Colony, Medipally,
+              Hyderabad 500098</span
+            >
           </p>
           <p>
             <i class="fa-regular fa-clock"></i> Mon-Sat: 9:00 AM - 9:00 PM |
@@ -265,7 +271,7 @@
                 <span>Book Appointment</span>
               </button>
               <a
-                href="https://wa.me/919182258839?text=Hi+Dr.+Renu's+Clinic!+I+want+to+consult+for+spine/joint+pain"
+                href="https://wa.me/917981598509?text=Hi+Dr.+Renu's+Clinic!+I+want+to+consult+for+spine/joint+pain"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn-whatsapp btn-lg"
@@ -339,15 +345,14 @@
 
               <div class="glance-image-box">
                 <img
-                  src="images/photo-1.jpg"
-                  alt="Dr. Renu's Chiropractic and Physiotherapy Clinic Boduppal Facility"
+                  src="images/about-doctors.png"
+                  alt="Dr. Bharath Adla (Spine Specialist) and Dr. Roja Eepuri (Pain Specialist) - Dr. Renu's Clinic"
                   class="glance-hero-img"
                   loading="eager"
                 />
                 <div class="glance-overlay-badge">
                   <span class="pulse-ring"></span>
-                  <i class="fa-solid fa-shield-halved"></i> Certified Osteopathy
-                  Care
+                  <i class="fa-solid fa-shield-halved"></i> Certified Specialists
                 </div>
               </div>
 
@@ -370,12 +375,11 @@
                   </div>
                   <div class="glance-info">
                     <span class="label">Location</span>
-                    <span class="value"
-                      >LAXMAREDDY RESIDENCY, Laxma reddy residency, Sai baba
-                      temple, 55-5/7/G1, road, beside Life Spring Hospitals,
-                      opposite to Studioseven family saloon, Buddha Nagar
-                      Colony, Mallikarjuna Nagar, Boduppal, Hyderabad, Telangana
-                      500092</span
+                    <span class="value" data-clinic-field="fullAddress"
+                      >Shop NO. 2, sanjana amrutha nilayam, Plot No.10-90/2,
+                      opposite to srikara &amp; miracle hospitals, Om Vihar
+                      Colony, Medipally, Canara Nagar, Hyderabad, Telangana
+                      500098</span
                     >
                   </div>
                 </div>
@@ -395,7 +399,8 @@
 
               <div class="glance-footer">
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0"
+                  href="https://www.google.com/maps/dir/?api=1&destination=Dr.Renu%27s+physiotherapy+%26+chiropractic+clinic%2C+Shop+NO.+2%2C+sanjana+amrutha+nilayam%2C+Plot+No.10-90%2F2%2C+opposite+to+srikara+%26+miracle+hospitals%2C+Om+Vihar+Colony%2C+Medipally%2C+Canara+Nagar%2C+Hyderabad%2C+Telangana+500098&destination_place_id=ChIJLTPjl6WfyzsR2OVpoA9UA8M"
+                  data-clinic-field="directionsUrl"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-outline btn-block"
@@ -466,8 +471,7 @@
       <!-- Services Overview Section -->
       <section class="section services-section" id="services">
         <div class="container">
-          <div class="section-header text-center">
-          </div>
+          <div class="section-header text-center"></div>
 
           <!-- Interactive Spine & Skeleton Anatomy Navigator -->
           <div class="anatomy-navigator-wrap" id="interactive-anatomy-explorer">
@@ -477,7 +481,8 @@
                 <div class="anatomy-visual-pane">
                   <div class="anatomy-visual-header">
                     <span class="anatomy-badge"
-                      ><i class="fa-solid fa-cube"></i> Full-Body 3D Wireframe &amp; Spine</span
+                      ><i class="fa-solid fa-cube"></i> Full-Body 3D Wireframe
+                      &amp; Spine</span
                     >
                     <span class="anatomy-hint"
                       ><i class="fa-solid fa-hand-pointer"></i> Tap any joint or
@@ -496,12 +501,7 @@
                       aria-label="Interactive Full Body 3D Wireframe and Skeleton Biomechanics Map"
                     >
                       <defs>
-                        <radialGradient
-                          id="glowGrad"
-                          cx="50%"
-                          cy="50%"
-                          r="50%"
-                        >
+                        <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
                           <stop
                             offset="0%"
                             stop-color="#10b981"
@@ -516,15 +516,35 @@
                       </defs>
 
                       <!-- Futuristic HUD Corner Brackets & Cyber Telemetry -->
-                      <path d="M16 30 L16 16 L30 16" class="wireframe-hud-bracket" />
-                      <path d="M324 30 L324 16 L310 16" class="wireframe-hud-bracket" />
-                      <path d="M16 550 L16 564 L30 564" class="wireframe-hud-bracket" />
-                      <path d="M324 550 L324 564 L310 564" class="wireframe-hud-bracket" />
+                      <path
+                        d="M16 30 L16 16 L30 16"
+                        class="wireframe-hud-bracket"
+                      />
+                      <path
+                        d="M324 30 L324 16 L310 16"
+                        class="wireframe-hud-bracket"
+                      />
+                      <path
+                        d="M16 550 L16 564 L30 564"
+                        class="wireframe-hud-bracket"
+                      />
+                      <path
+                        d="M324 550 L324 564 L310 564"
+                        class="wireframe-hud-bracket"
+                      />
 
-                      <text x="34" y="26" class="wireframe-hud-text">3D_BODY_WIREFRAME // MESH</text>
-                      <text x="246" y="26" class="wireframe-hud-text">CAD_ORTHO: v4.2</text>
-                      <text x="34" y="558" class="wireframe-hud-text">AXIS: 0.00° [SYMMETRIC]</text>
-                      <text x="250" y="558" class="wireframe-hud-text">FULL RIG: 100%</text>
+                      <text x="34" y="26" class="wireframe-hud-text">
+                        3D_BODY_WIREFRAME // MESH
+                      </text>
+                      <text x="246" y="26" class="wireframe-hud-text">
+                        CAD_ORTHO: v4.2
+                      </text>
+                      <text x="34" y="558" class="wireframe-hud-text">
+                        AXIS: 0.00° [SYMMETRIC]
+                      </text>
+                      <text x="250" y="558" class="wireframe-hud-text">
+                        FULL RIG: 100%
+                      </text>
 
                       <!-- Center Alignment Axis -->
                       <line
@@ -592,83 +612,389 @@
                       />
 
                       <!-- Transverse Wireframe Latitudinal Contour Rings -->
-                      <ellipse cx="170" cy="32" rx="20" ry="6" class="wireframe-contour" />
-                      <ellipse cx="170" cy="50" rx="26" ry="7.5" class="wireframe-contour" />
-                      <ellipse cx="170" cy="66" rx="21" ry="6" class="wireframe-contour" />
+                      <ellipse
+                        cx="170"
+                        cy="32"
+                        rx="20"
+                        ry="6"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="170"
+                        cy="50"
+                        rx="26"
+                        ry="7.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="170"
+                        cy="66"
+                        rx="21"
+                        ry="6"
+                        class="wireframe-contour"
+                      />
 
-                      <ellipse cx="170" cy="88" rx="15" ry="4.5" class="wireframe-contour" />
-                      <ellipse cx="170" cy="104" rx="17" ry="5" class="wireframe-contour" />
+                      <ellipse
+                        cx="170"
+                        cy="88"
+                        rx="15"
+                        ry="4.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="170"
+                        cy="104"
+                        rx="17"
+                        ry="5"
+                        class="wireframe-contour"
+                      />
 
-                      <ellipse cx="170" cy="136" rx="46" ry="10" class="wireframe-contour" />
-                      <ellipse cx="170" cy="164" rx="50" ry="11" class="wireframe-contour" />
-                      <ellipse cx="170" cy="192" rx="50" ry="11.5" class="wireframe-contour" />
+                      <ellipse
+                        cx="170"
+                        cy="136"
+                        rx="46"
+                        ry="10"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="170"
+                        cy="164"
+                        rx="50"
+                        ry="11"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="170"
+                        cy="192"
+                        rx="50"
+                        ry="11.5"
+                        class="wireframe-contour"
+                      />
 
-                      <ellipse cx="170" cy="226" rx="44" ry="10" class="wireframe-contour" />
-                      <ellipse cx="170" cy="254" rx="45" ry="10" class="wireframe-contour" />
-                      <ellipse cx="170" cy="276" rx="48" ry="11" class="wireframe-contour" />
+                      <ellipse
+                        cx="170"
+                        cy="226"
+                        rx="44"
+                        ry="10"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="170"
+                        cy="254"
+                        rx="45"
+                        ry="10"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="170"
+                        cy="276"
+                        rx="48"
+                        ry="11"
+                        class="wireframe-contour"
+                      />
 
-                      <ellipse cx="170" cy="298" rx="54" ry="12.5" class="wireframe-contour" />
-                      <ellipse cx="170" cy="322" rx="52" ry="12" class="wireframe-contour" />
+                      <ellipse
+                        cx="170"
+                        cy="298"
+                        rx="54"
+                        ry="12.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="170"
+                        cy="322"
+                        rx="52"
+                        ry="12"
+                        class="wireframe-contour"
+                      />
 
                       <!-- Arm Contours (Left & Right) -->
-                      <ellipse cx="80" cy="166" rx="11" ry="4.5" transform="rotate(-12 80 166)" class="wireframe-contour" />
-                      <ellipse cx="88" cy="214" rx="10" ry="4" transform="rotate(-8 88 214)" class="wireframe-contour" />
-                      <ellipse cx="74" cy="254" rx="8.5" ry="3.5" transform="rotate(-15 74 254)" class="wireframe-contour" />
+                      <ellipse
+                        cx="80"
+                        cy="166"
+                        rx="11"
+                        ry="4.5"
+                        transform="rotate(-12 80 166)"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="88"
+                        cy="214"
+                        rx="10"
+                        ry="4"
+                        transform="rotate(-8 88 214)"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="74"
+                        cy="254"
+                        rx="8.5"
+                        ry="3.5"
+                        transform="rotate(-15 74 254)"
+                        class="wireframe-contour"
+                      />
 
-                      <ellipse cx="260" cy="166" rx="11" ry="4.5" transform="rotate(12 260 166)" class="wireframe-contour" />
-                      <ellipse cx="252" cy="214" rx="10" ry="4" transform="rotate(8 252 214)" class="wireframe-contour" />
-                      <ellipse cx="266" cy="254" rx="8.5" ry="3.5" transform="rotate(15 266 254)" class="wireframe-contour" />
+                      <ellipse
+                        cx="260"
+                        cy="166"
+                        rx="11"
+                        ry="4.5"
+                        transform="rotate(12 260 166)"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="252"
+                        cy="214"
+                        rx="10"
+                        ry="4"
+                        transform="rotate(8 252 214)"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="266"
+                        cy="254"
+                        rx="8.5"
+                        ry="3.5"
+                        transform="rotate(15 266 254)"
+                        class="wireframe-contour"
+                      />
 
                       <!-- Thigh Contours (Left & Right) -->
-                      <ellipse cx="136" cy="360" rx="19" ry="6.5" class="wireframe-contour" />
-                      <ellipse cx="135" cy="392" rx="17" ry="6" class="wireframe-contour" />
-                      <ellipse cx="135" cy="418" rx="15" ry="5.5" class="wireframe-contour" />
+                      <ellipse
+                        cx="136"
+                        cy="360"
+                        rx="19"
+                        ry="6.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="135"
+                        cy="392"
+                        rx="17"
+                        ry="6"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="135"
+                        cy="418"
+                        rx="15"
+                        ry="5.5"
+                        class="wireframe-contour"
+                      />
 
-                      <ellipse cx="204" cy="360" rx="19" ry="6.5" class="wireframe-contour" />
-                      <ellipse cx="205" cy="392" rx="17" ry="6" class="wireframe-contour" />
-                      <ellipse cx="205" cy="418" rx="15" ry="5.5" class="wireframe-contour" />
+                      <ellipse
+                        cx="204"
+                        cy="360"
+                        rx="19"
+                        ry="6.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="205"
+                        cy="392"
+                        rx="17"
+                        ry="6"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="205"
+                        cy="418"
+                        rx="15"
+                        ry="5.5"
+                        class="wireframe-contour"
+                      />
 
                       <!-- Knee Contours -->
-                      <ellipse cx="136" cy="436" rx="13" ry="5.5" class="wireframe-contour" />
-                      <ellipse cx="204" cy="436" rx="13" ry="5.5" class="wireframe-contour" />
+                      <ellipse
+                        cx="136"
+                        cy="436"
+                        rx="13"
+                        ry="5.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="204"
+                        cy="436"
+                        rx="13"
+                        ry="5.5"
+                        class="wireframe-contour"
+                      />
 
                       <!-- Calf & Ankle Contours -->
-                      <ellipse cx="133" cy="474" rx="16" ry="5.5" class="wireframe-contour" />
-                      <ellipse cx="133" cy="504" rx="13" ry="4.5" class="wireframe-contour" />
-                      <ellipse cx="133" cy="524" rx="10" ry="3.5" class="wireframe-contour" />
+                      <ellipse
+                        cx="133"
+                        cy="474"
+                        rx="16"
+                        ry="5.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="133"
+                        cy="504"
+                        rx="13"
+                        ry="4.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="133"
+                        cy="524"
+                        rx="10"
+                        ry="3.5"
+                        class="wireframe-contour"
+                      />
 
-                      <ellipse cx="207" cy="474" rx="16" ry="5.5" class="wireframe-contour" />
-                      <ellipse cx="207" cy="504" rx="13" ry="4.5" class="wireframe-contour" />
-                      <ellipse cx="207" cy="524" rx="10" ry="3.5" class="wireframe-contour" />
+                      <ellipse
+                        cx="207"
+                        cy="474"
+                        rx="16"
+                        ry="5.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="207"
+                        cy="504"
+                        rx="13"
+                        ry="4.5"
+                        class="wireframe-contour"
+                      />
+                      <ellipse
+                        cx="207"
+                        cy="524"
+                        rx="10"
+                        ry="3.5"
+                        class="wireframe-contour"
+                      />
 
                       <!-- Wireframe Triangulation Mesh Struts across Body Geometry -->
-                      <path d="M152 40 L170 54 L188 40 M170 18 L152 40 M170 18 L188 40 M170 54 L170 82" class="wireframe-strut" />
-                      <path d="M124 136 L170 164 L216 136 M120 164 L170 192 L220 164 M124 192 L170 226 L216 192" class="wireframe-strut" />
-                      <path d="M124 226 L170 254 L216 226 M124 254 L170 276 L216 254 M126 276 L170 298 L214 276" class="wireframe-strut" />
-                      <path d="M102 124 L80 166 L124 160 M80 166 L88 214 L98 210 M88 214 L74 254 L86 248" class="wireframe-strut" />
-                      <path d="M238 124 L260 166 L216 160 M260 166 L252 214 L242 210 M252 214 L266 254 L254 248" class="wireframe-strut" />
-                      <path d="M116 334 L136 360 L156 338 M114 366 L135 392 L154 366 M116 400 L135 418 L152 400" class="wireframe-strut" />
-                      <path d="M224 334 L204 360 L184 338 M226 366 L205 392 L186 366 M224 400 L205 418 L188 400" class="wireframe-strut" />
-                      <path d="M120 446 L133 474 L148 446 M114 476 L133 504 L150 476 M122 524 L133 524 L144 524" class="wireframe-strut" />
-                      <path d="M220 446 L207 474 L192 446 M226 476 L207 504 L190 476 M218 524 L207 524 L196 524" class="wireframe-strut" />
+                      <path
+                        d="M152 40 L170 54 L188 40 M170 18 L152 40 M170 18 L188 40 M170 54 L170 82"
+                        class="wireframe-strut"
+                      />
+                      <path
+                        d="M124 136 L170 164 L216 136 M120 164 L170 192 L220 164 M124 192 L170 226 L216 192"
+                        class="wireframe-strut"
+                      />
+                      <path
+                        d="M124 226 L170 254 L216 226 M124 254 L170 276 L216 254 M126 276 L170 298 L214 276"
+                        class="wireframe-strut"
+                      />
+                      <path
+                        d="M102 124 L80 166 L124 160 M80 166 L88 214 L98 210 M88 214 L74 254 L86 248"
+                        class="wireframe-strut"
+                      />
+                      <path
+                        d="M238 124 L260 166 L216 160 M260 166 L252 214 L242 210 M252 214 L266 254 L254 248"
+                        class="wireframe-strut"
+                      />
+                      <path
+                        d="M116 334 L136 360 L156 338 M114 366 L135 392 L154 366 M116 400 L135 418 L152 400"
+                        class="wireframe-strut"
+                      />
+                      <path
+                        d="M224 334 L204 360 L184 338 M226 366 L205 392 L186 366 M224 400 L205 418 L188 400"
+                        class="wireframe-strut"
+                      />
+                      <path
+                        d="M120 446 L133 474 L148 446 M114 476 L133 504 L150 476 M122 524 L133 524 L144 524"
+                        class="wireframe-strut"
+                      />
+                      <path
+                        d="M220 446 L207 474 L192 446 M226 476 L207 504 L190 476 M218 524 L207 524 L196 524"
+                        class="wireframe-strut"
+                      />
 
                       <!-- Reference Biomechanical Vertices -->
-                      <circle cx="170" cy="18" r="2.5" class="wireframe-vertex" />
-                      <circle cx="144" cy="50" r="2.2" class="wireframe-vertex" />
-                      <circle cx="196" cy="50" r="2.2" class="wireframe-vertex" />
-                      <circle cx="170" cy="84" r="2.5" class="wireframe-vertex" />
-                      <circle cx="102" cy="124" r="3" class="wireframe-vertex" />
-                      <circle cx="238" cy="124" r="3" class="wireframe-vertex" />
+                      <circle
+                        cx="170"
+                        cy="18"
+                        r="2.5"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="144"
+                        cy="50"
+                        r="2.2"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="196"
+                        cy="50"
+                        r="2.2"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="170"
+                        cy="84"
+                        r="2.5"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="102"
+                        cy="124"
+                        r="3"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="238"
+                        cy="124"
+                        r="3"
+                        class="wireframe-vertex"
+                      />
                       <circle cx="88" cy="214" r="3" class="wireframe-vertex" />
-                      <circle cx="252" cy="214" r="3" class="wireframe-vertex" />
-                      <circle cx="68" cy="274" r="2.5" class="wireframe-vertex" />
-                      <circle cx="272" cy="274" r="2.5" class="wireframe-vertex" />
-                      <circle cx="116" cy="334" r="3" class="wireframe-vertex" />
-                      <circle cx="224" cy="334" r="3" class="wireframe-vertex" />
-                      <circle cx="136" cy="436" r="3.5" class="wireframe-vertex" />
-                      <circle cx="204" cy="436" r="3.5" class="wireframe-vertex" />
-                      <circle cx="133" cy="524" r="2.8" class="wireframe-vertex" />
-                      <circle cx="207" cy="524" r="2.8" class="wireframe-vertex" />
+                      <circle
+                        cx="252"
+                        cy="214"
+                        r="3"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="68"
+                        cy="274"
+                        r="2.5"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="272"
+                        cy="274"
+                        r="2.5"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="116"
+                        cy="334"
+                        r="3"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="224"
+                        cy="334"
+                        r="3"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="136"
+                        cy="436"
+                        r="3.5"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="204"
+                        cy="436"
+                        r="3.5"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="133"
+                        cy="524"
+                        r="2.8"
+                        class="wireframe-vertex"
+                      />
+                      <circle
+                        cx="207"
+                        cy="524"
+                        r="2.8"
+                        class="wireframe-vertex"
+                      />
 
                       <!-- ==============================================
                            INTERACTIVE ANATOMICAL SKELETON & WIREFRAME REGIONS
@@ -683,8 +1009,20 @@
                         aria-label="Cranium and Central Neuro Axis"
                       >
                         <!-- Wireframe Head Highlight Halo -->
-                        <ellipse cx="170" cy="48" rx="27" ry="32" class="wireframe-silhouette" />
-                        <ellipse cx="170" cy="50" rx="26" ry="7.5" class="wireframe-contour" />
+                        <ellipse
+                          cx="170"
+                          cy="48"
+                          rx="27"
+                          ry="32"
+                          class="wireframe-silhouette"
+                        />
+                        <ellipse
+                          cx="170"
+                          cy="50"
+                          rx="26"
+                          ry="7.5"
+                          class="wireframe-contour"
+                        />
                         <!-- Skull bone -->
                         <ellipse
                           cx="170"
@@ -717,17 +1055,77 @@
                         aria-label="Cervical Spine (Neck)"
                       >
                         <!-- Neck Wireframe Contours -->
-                        <path d="M152 78 L150 114" class="wireframe-silhouette" />
-                        <path d="M188 78 L190 114" class="wireframe-silhouette" />
-                        <ellipse cx="170" cy="88" rx="15" ry="4.5" class="wireframe-contour" />
-                        <ellipse cx="170" cy="104" rx="17" ry="5" class="wireframe-contour" />
+                        <path
+                          d="M152 78 L150 114"
+                          class="wireframe-silhouette"
+                        />
+                        <path
+                          d="M188 78 L190 114"
+                          class="wireframe-silhouette"
+                        />
+                        <ellipse
+                          cx="170"
+                          cy="88"
+                          rx="15"
+                          ry="4.5"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="170"
+                          cy="104"
+                          rx="17"
+                          ry="5"
+                          class="wireframe-contour"
+                        />
                         <!-- Vertebral blocks C1-C7 -->
-                        <rect x="162" y="80" width="16" height="4.5" rx="2" class="bone-fill bone-outline" />
-                        <rect x="160" y="86.5" width="20" height="4.5" rx="2" class="bone-fill bone-outline" />
-                        <rect x="159" y="93" width="22" height="4.5" rx="2" class="bone-fill bone-outline" />
-                        <rect x="158" y="99.5" width="24" height="4.5" rx="2" class="bone-fill bone-outline" />
-                        <rect x="157" y="106" width="26" height="5" rx="2" class="bone-fill bone-outline" />
-                        <rect x="156" y="113" width="28" height="5.5" rx="2" class="bone-fill bone-outline" />
+                        <rect
+                          x="162"
+                          y="80"
+                          width="16"
+                          height="4.5"
+                          rx="2"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="160"
+                          y="86.5"
+                          width="20"
+                          height="4.5"
+                          rx="2"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="159"
+                          y="93"
+                          width="22"
+                          height="4.5"
+                          rx="2"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="158"
+                          y="99.5"
+                          width="24"
+                          height="4.5"
+                          rx="2"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="157"
+                          y="106"
+                          width="26"
+                          height="5"
+                          rx="2"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="156"
+                          y="113"
+                          width="28"
+                          height="5.5"
+                          rx="2"
+                          class="bone-fill bone-outline"
+                        />
                       </g>
 
                       <!-- 3. Shoulders, Clavicles & Rotator Cuff Mechanism -->
@@ -740,25 +1138,87 @@
                         aria-label="Shoulders and Rotator Cuff"
                       >
                         <!-- Wireframe Shoulder Arcs & Upper Arms -->
-                        <path d="M150 114 Q126 118 102 124 C82 130 72 168 70 210" class="wireframe-silhouette" />
-                        <path d="M190 114 Q214 118 238 124 C258 130 268 168 270 210" class="wireframe-silhouette" />
-                        <ellipse cx="102" cy="124" rx="13" ry="8" transform="rotate(-15 102 124)" class="wireframe-contour" />
-                        <ellipse cx="238" cy="124" rx="13" ry="8" transform="rotate(15 238 124)" class="wireframe-contour" />
+                        <path
+                          d="M150 114 Q126 118 102 124 C82 130 72 168 70 210"
+                          class="wireframe-silhouette"
+                        />
+                        <path
+                          d="M190 114 Q214 118 238 124 C258 130 268 168 270 210"
+                          class="wireframe-silhouette"
+                        />
+                        <ellipse
+                          cx="102"
+                          cy="124"
+                          rx="13"
+                          ry="8"
+                          transform="rotate(-15 102 124)"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="238"
+                          cy="124"
+                          rx="13"
+                          ry="8"
+                          transform="rotate(15 238 124)"
+                          class="wireframe-contour"
+                        />
                         <!-- Clavicles -->
-                        <path d="M170 116 Q138 114 110 126" class="bone-outline" />
-                        <path d="M170 116 Q202 114 230 126" class="bone-outline" />
+                        <path
+                          d="M170 116 Q138 114 110 126"
+                          class="bone-outline"
+                        />
+                        <path
+                          d="M170 116 Q202 114 230 126"
+                          class="bone-outline"
+                        />
                         <!-- Left & Right Shoulder Joints -->
-                        <circle cx="108" cy="128" r="9" class="bone-fill bone-outline" />
-                        <circle cx="232" cy="128" r="9" class="bone-fill bone-outline" />
+                        <circle
+                          cx="108"
+                          cy="128"
+                          r="9"
+                          class="bone-fill bone-outline"
+                        />
+                        <circle
+                          cx="232"
+                          cy="128"
+                          r="9"
+                          class="bone-fill bone-outline"
+                        />
                         <!-- Humerus Upper Arm Bones -->
-                        <path d="M106 137 L92 212" class="bone-outline" stroke-linecap="round" />
-                        <path d="M234 137 L248 212" class="bone-outline" stroke-linecap="round" />
+                        <path
+                          d="M106 137 L92 212"
+                          class="bone-outline"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M234 137 L248 212"
+                          class="bone-outline"
+                          stroke-linecap="round"
+                        />
                         <!-- Elbow joints -->
-                        <circle cx="92" cy="214" r="6" class="bone-fill bone-outline" />
-                        <circle cx="248" cy="214" r="6" class="bone-fill bone-outline" />
+                        <circle
+                          cx="92"
+                          cy="214"
+                          r="6"
+                          class="bone-fill bone-outline"
+                        />
+                        <circle
+                          cx="248"
+                          cy="214"
+                          r="6"
+                          class="bone-fill bone-outline"
+                        />
                         <!-- Forearms -->
-                        <path d="M92 220 L84 280" class="bone-outline" stroke-width="2" />
-                        <path d="M248 220 L256 280" class="bone-outline" stroke-width="2" />
+                        <path
+                          d="M92 220 L84 280"
+                          class="bone-outline"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M248 220 L256 280"
+                          class="bone-outline"
+                          stroke-width="2"
+                        />
                       </g>
 
                       <!-- 4. Thoracic Spine & Ribcage -->
@@ -771,20 +1231,77 @@
                         aria-label="Thoracic Spine and Ribcage"
                       >
                         <!-- Wireframe Chest Contours -->
-                        <ellipse cx="170" cy="136" rx="46" ry="10" class="wireframe-contour" />
-                        <ellipse cx="170" cy="164" rx="50" ry="11" class="wireframe-contour" />
-                        <ellipse cx="170" cy="192" rx="50" ry="11.5" class="wireframe-contour" />
+                        <ellipse
+                          cx="170"
+                          cy="136"
+                          rx="46"
+                          ry="10"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="170"
+                          cy="164"
+                          rx="50"
+                          ry="11"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="170"
+                          cy="192"
+                          rx="50"
+                          ry="11.5"
+                          class="wireframe-contour"
+                        />
                         <!-- Central Spine Axis / Sternum -->
-                        <rect x="166" y="120" width="8" height="96" rx="2" class="bone-fill bone-outline" />
+                        <rect
+                          x="166"
+                          y="120"
+                          width="8"
+                          height="96"
+                          rx="2"
+                          class="bone-fill bone-outline"
+                        />
                         <!-- Rib pairs -->
-                        <path d="M166 128 Q128 128 126 144 Q124 160 166 166" class="bone-outline" opacity="0.85" />
-                        <path d="M174 128 Q212 128 214 144 Q216 160 174 166" class="bone-outline" opacity="0.85" />
-                        <path d="M166 144 Q116 144 114 164 Q112 182 166 186" class="bone-outline" opacity="0.85" />
-                        <path d="M174 144 Q224 144 226 164 Q228 182 174 186" class="bone-outline" opacity="0.85" />
-                        <path d="M166 162 Q110 162 110 184 Q110 202 166 206" class="bone-outline" opacity="0.85" />
-                        <path d="M174 162 Q230 162 230 184 Q230 202 174 206" class="bone-outline" opacity="0.85" />
-                        <path d="M166 180 Q116 182 116 200 Q116 214 166 218" class="bone-outline" opacity="0.85" />
-                        <path d="M174 180 Q224 182 224 200 Q224 214 174 218" class="bone-outline" opacity="0.85" />
+                        <path
+                          d="M166 128 Q128 128 126 144 Q124 160 166 166"
+                          class="bone-outline"
+                          opacity="0.85"
+                        />
+                        <path
+                          d="M174 128 Q212 128 214 144 Q216 160 174 166"
+                          class="bone-outline"
+                          opacity="0.85"
+                        />
+                        <path
+                          d="M166 144 Q116 144 114 164 Q112 182 166 186"
+                          class="bone-outline"
+                          opacity="0.85"
+                        />
+                        <path
+                          d="M174 144 Q224 144 226 164 Q228 182 174 186"
+                          class="bone-outline"
+                          opacity="0.85"
+                        />
+                        <path
+                          d="M166 162 Q110 162 110 184 Q110 202 166 206"
+                          class="bone-outline"
+                          opacity="0.85"
+                        />
+                        <path
+                          d="M174 162 Q230 162 230 184 Q230 202 174 206"
+                          class="bone-outline"
+                          opacity="0.85"
+                        />
+                        <path
+                          d="M166 180 Q116 182 116 200 Q116 214 166 218"
+                          class="bone-outline"
+                          opacity="0.85"
+                        />
+                        <path
+                          d="M174 180 Q224 182 224 200 Q224 214 174 218"
+                          class="bone-outline"
+                          opacity="0.85"
+                        />
                       </g>
 
                       <!-- 5. Lumbar Spine (L1-L5 Vertebrae & Intervertebral Discs) -->
@@ -797,18 +1314,77 @@
                         aria-label="Lumbar Spine and Sciatic Nerve"
                       >
                         <!-- Wireframe Waist Contours -->
-                        <ellipse cx="170" cy="226" rx="44" ry="10" class="wireframe-contour" />
-                        <ellipse cx="170" cy="254" rx="45" ry="10" class="wireframe-contour" />
-                        <ellipse cx="170" cy="276" rx="48" ry="11" class="wireframe-contour" />
+                        <ellipse
+                          cx="170"
+                          cy="226"
+                          rx="44"
+                          ry="10"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="170"
+                          cy="254"
+                          rx="45"
+                          ry="10"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="170"
+                          cy="276"
+                          rx="48"
+                          ry="11"
+                          class="wireframe-contour"
+                        />
                         <!-- 5 Stacked Lumbar Vertebral Units -->
-                        <rect x="156" y="222" width="28" height="7.5" rx="2.5" class="bone-fill bone-outline" />
-                        <rect x="155" y="232.5" width="30" height="8" rx="2.5" class="bone-fill bone-outline" />
-                        <rect x="154" y="243.5" width="32" height="8.5" rx="2.5" class="bone-fill bone-outline" />
-                        <rect x="153" y="255" width="34" height="9" rx="2.5" class="bone-fill bone-outline" />
-                        <rect x="152" y="267" width="36" height="9.5" rx="2.5" class="bone-fill bone-outline" />
+                        <rect
+                          x="156"
+                          y="222"
+                          width="28"
+                          height="7.5"
+                          rx="2.5"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="155"
+                          y="232.5"
+                          width="30"
+                          height="8"
+                          rx="2.5"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="154"
+                          y="243.5"
+                          width="32"
+                          height="8.5"
+                          rx="2.5"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="153"
+                          y="255"
+                          width="34"
+                          height="9"
+                          rx="2.5"
+                          class="bone-fill bone-outline"
+                        />
+                        <rect
+                          x="152"
+                          y="267"
+                          width="36"
+                          height="9.5"
+                          rx="2.5"
+                          class="bone-fill bone-outline"
+                        />
                         <!-- Sciatic Nerve Branching Lines -->
-                        <path d="M164 274 Q154 315 142 385 Q136 430 136 455" class="nerve-path" />
-                        <path d="M176 274 Q186 315 198 385 Q204 430 204 455" class="nerve-path" />
+                        <path
+                          d="M164 274 Q154 315 142 385 Q136 430 136 455"
+                          class="nerve-path"
+                        />
+                        <path
+                          d="M176 274 Q186 315 198 385 Q204 430 204 455"
+                          class="nerve-path"
+                        />
                       </g>
 
                       <!-- 6. Pelvis Girdle, Sacrum & SI Joints -->
@@ -821,8 +1397,20 @@
                         aria-label="Pelvis and Sacroiliac Joint"
                       >
                         <!-- Wireframe Pelvic Contours -->
-                        <ellipse cx="170" cy="298" rx="54" ry="12.5" class="wireframe-contour" />
-                        <ellipse cx="170" cy="322" rx="52" ry="12" class="wireframe-contour" />
+                        <ellipse
+                          cx="170"
+                          cy="298"
+                          rx="54"
+                          ry="12.5"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="170"
+                          cy="322"
+                          rx="52"
+                          ry="12"
+                          class="wireframe-contour"
+                        />
                         <!-- Iliac Crests -->
                         <path
                           d="M152 278 C130 274 114 286 116 312 C118 330 134 336 150 330 C156 328 160 320 160 312 Z"
@@ -833,12 +1421,25 @@
                           class="bone-fill bone-outline"
                         />
                         <!-- Sacrum & Coccyx -->
-                        <polygon points="160,280 180,280 176,325 170,335 164,325" class="bone-fill bone-outline" />
+                        <polygon
+                          points="160,280 180,280 176,325 170,335 164,325"
+                          class="bone-fill bone-outline"
+                        />
                       </g>
 
                       <!-- Femur Thigh Bones -->
-                      <path d="M136 334 Q130 380 136 430" class="bone-outline" stroke-width="3" stroke-linecap="round" />
-                      <path d="M204 334 Q210 380 204 430" class="bone-outline" stroke-width="3" stroke-linecap="round" />
+                      <path
+                        d="M136 334 Q130 380 136 430"
+                        class="bone-outline"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M204 334 Q210 380 204 430"
+                        class="bone-outline"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                      />
 
                       <!-- 7. Knee Joints & Patella -->
                       <g
@@ -850,21 +1451,89 @@
                         aria-label="Knee Joints and Patella"
                       >
                         <!-- Wireframe Knee Contours -->
-                        <ellipse cx="136" cy="436" rx="14" ry="7" class="wireframe-contour" />
-                        <ellipse cx="204" cy="436" rx="14" ry="7" class="wireframe-contour" />
-                        <ellipse cx="133" cy="474" rx="16" ry="5.5" class="wireframe-contour" />
-                        <ellipse cx="207" cy="474" rx="16" ry="5.5" class="wireframe-contour" />
+                        <ellipse
+                          cx="136"
+                          cy="436"
+                          rx="14"
+                          ry="7"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="204"
+                          cy="436"
+                          rx="14"
+                          ry="7"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="133"
+                          cy="474"
+                          rx="16"
+                          ry="5.5"
+                          class="wireframe-contour"
+                        />
+                        <ellipse
+                          cx="207"
+                          cy="474"
+                          rx="16"
+                          ry="5.5"
+                          class="wireframe-contour"
+                        />
                         <!-- Left Knee & Patella -->
-                        <ellipse cx="136" cy="436" rx="9" ry="8" class="bone-fill bone-outline" />
-                        <circle cx="136" cy="436" r="4" fill="#38bdf8" opacity="0.75" />
+                        <ellipse
+                          cx="136"
+                          cy="436"
+                          rx="9"
+                          ry="8"
+                          class="bone-fill bone-outline"
+                        />
+                        <circle
+                          cx="136"
+                          cy="436"
+                          r="4"
+                          fill="#38bdf8"
+                          opacity="0.75"
+                        />
                         <!-- Right Knee & Patella -->
-                        <ellipse cx="204" cy="436" rx="9" ry="8" class="bone-fill bone-outline" />
-                        <circle cx="204" cy="436" r="4" fill="#38bdf8" opacity="0.75" />
+                        <ellipse
+                          cx="204"
+                          cy="436"
+                          rx="9"
+                          ry="8"
+                          class="bone-fill bone-outline"
+                        />
+                        <circle
+                          cx="204"
+                          cy="436"
+                          r="4"
+                          fill="#38bdf8"
+                          opacity="0.75"
+                        />
                         <!-- Lower leg (Tibia & Fibula) & Feet Bones -->
-                        <path d="M136 445 L134 525" class="bone-outline" stroke-width="2.4" />
-                        <path d="M204 445 L206 525" class="bone-outline" stroke-width="2.4" />
-                        <ellipse cx="128" cy="534" rx="12" ry="5.5" class="bone-fill bone-outline" />
-                        <ellipse cx="212" cy="534" rx="12" ry="5.5" class="bone-fill bone-outline" />
+                        <path
+                          d="M136 445 L134 525"
+                          class="bone-outline"
+                          stroke-width="2.4"
+                        />
+                        <path
+                          d="M204 445 L206 525"
+                          class="bone-outline"
+                          stroke-width="2.4"
+                        />
+                        <ellipse
+                          cx="128"
+                          cy="534"
+                          rx="12"
+                          ry="5.5"
+                          class="bone-fill bone-outline"
+                        />
+                        <ellipse
+                          cx="212"
+                          cy="534"
+                          rx="12"
+                          ry="5.5"
+                          class="bone-fill bone-outline"
+                        />
                       </g>
 
                       <!-- Interactive Hotspot Pins -->
@@ -1132,7 +1801,7 @@
                         Consultation for Neck Care
                       </button>
                       <a
-                        href="https://wa.me/919182258839?text=Hello+Dr.+Renu%27s+Clinic%2C+I+want+to+consult+for+Cervical+Spondylosis+and+Neck+Pain"
+                        href="https://wa.me/917981598509?text=Hello+Dr.+Renu%27s+Clinic%2C+I+want+to+consult+for+Cervical+Spondylosis+and+Neck+Pain"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn btn-whatsapp"
@@ -1209,7 +1878,7 @@
               </p>
               <div class="service-card-actions">
                 <a
-                  href="https://wa.me/919182258839?text=I+want+to+know+more+about+Neurological+Rehabilitation"
+                  href="https://wa.me/917981598509?text=I+want+to+know+more+about+Neurological+Rehabilitation"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-whatsapp btn-block"
@@ -1251,7 +1920,7 @@
               </p>
               <div class="service-card-actions">
                 <a
-                  href="https://wa.me/919182258839?text=I+want+to+know+more+about+Chiropractic+Treatment"
+                  href="https://wa.me/917981598509?text=I+want+to+know+more+about+Chiropractic+Treatment"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-whatsapp btn-block"
@@ -1276,7 +1945,8 @@
                   loading="lazy"
                 />
                 <span class="service-card-anatomy-tag"
-                  ><i class="fa-solid fa-bone"></i> Shoulder Joint Highlight</span
+                  ><i class="fa-solid fa-bone"></i> Shoulder Joint
+                  Highlight</span
                 >
               </div>
               <div class="service-card-topbar">
@@ -1293,7 +1963,7 @@
               </p>
               <div class="service-card-actions">
                 <a
-                  href="https://wa.me/919182258839?text=I+want+to+know+more+about+Frozen+Shoulder+and+Rotator+Cuff+Rehabilitation"
+                  href="https://wa.me/917981598509?text=I+want+to+know+more+about+Frozen+Shoulder+and+Rotator+Cuff+Rehabilitation"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-whatsapp btn-block"
@@ -1335,7 +2005,7 @@
               </p>
               <div class="service-card-actions">
                 <a
-                  href="https://wa.me/919182258839?text=I+want+to+know+more+about+Sciatica+Treatment"
+                  href="https://wa.me/917981598509?text=I+want+to+know+more+about+Sciatica+Treatment"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-whatsapp btn-block"
@@ -1360,7 +2030,8 @@
                   loading="lazy"
                 />
                 <span class="service-card-anatomy-tag"
-                  ><i class="fa-solid fa-bone"></i> Cervical C1–C7 Highlight</span
+                  ><i class="fa-solid fa-bone"></i> Cervical C1–C7
+                  Highlight</span
                 >
               </div>
               <div class="service-card-topbar">
@@ -1372,12 +2043,12 @@
               <h3 class="service-title">Cervical Spondylosis Care</h3>
               <p class="service-desc">
                 Gentle cervical decompression, suboccipital release, and
-                ergonomic retraining to permanently relieve stiff neck, tech-neck
-                strain, dizziness, and radiating arm numbness.
+                ergonomic retraining to permanently relieve stiff neck,
+                tech-neck strain, dizziness, and radiating arm numbness.
               </p>
               <div class="service-card-actions">
                 <a
-                  href="https://wa.me/919182258839?text=I+want+to+know+more+about+Cervical+Spondylosis+Treatment"
+                  href="https://wa.me/917981598509?text=I+want+to+know+more+about+Cervical+Spondylosis+Treatment"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-whatsapp btn-block"
@@ -1419,7 +2090,7 @@
               </p>
               <div class="service-card-actions">
                 <a
-                  href="https://wa.me/919182258839?text=I+want+to+know+more+about+Knee+Osteoarthritis+and+Joint+Care"
+                  href="https://wa.me/917981598509?text=I+want+to+know+more+about+Knee+Osteoarthritis+and+Joint+Care"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-whatsapp btn-block"
@@ -1486,7 +2157,7 @@
 
                 <div class="product-banner-actions">
                   <a
-                    href="https://wa.me/919182258839?text=Hi+Dr.+Bharath+Adla!+I+want+to+inquire+about+FDM+(Fascial+Distortion+Model)+Therapy"
+                    href="https://wa.me/917981598509?text=Hi+Dr.+Bharath+Adla!+I+want+to+inquire+about+FDM+(Fascial+Distortion+Model)+Therapy"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn btn-whatsapp btn-lg"
@@ -1537,7 +2208,7 @@
             <article class="doctor-card">
               <div class="doctor-avatar-box">
                 <div class="doctor-avatar-placeholder">
-                  <i class="fa-solid fa-user-doctor"></i>
+                  <img src="images/dr-bharath-adla.png" alt="Dr. Bharath Adla - Spine Specialist" class="doctor-thumb-img" loading="lazy">
                 </div>
                 <span class="doctor-badge">Spine Specialist</span>
               </div>
@@ -1581,7 +2252,7 @@
                     Bharath
                   </button>
                   <a
-                    href="https://wa.me/919182258839?text=Hello+Dr.+Bharath+Adla!+I+need+a+consultation+for+spine+care"
+                    href="https://wa.me/917981598509?text=Hello+Dr.+Bharath+Adla!+I+need+a+consultation+for+spine+care"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn btn-whatsapp btn-sm"
@@ -1597,7 +2268,7 @@
             <article class="doctor-card">
               <div class="doctor-avatar-box">
                 <div class="doctor-avatar-placeholder female">
-                  <i class="fa-solid fa-user-doctor"></i>
+                  <img src="images/dr-roja-eepuri.png" alt="Dr. Roja Eepuri - Pain Specialist" class="doctor-thumb-img" loading="lazy">
                 </div>
                 <span class="doctor-badge">Pain Specialist</span>
               </div>
@@ -1639,7 +2310,7 @@
                     Roja
                   </button>
                   <a
-                    href="https://wa.me/919182258839?text=Hello+Dr.+Roja+Eepuri!+I+need+a+consultation+for+pain+management"
+                    href="https://wa.me/917981598509?text=Hello+Dr.+Roja+Eepuri!+I+need+a+consultation+for+pain+management"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn btn-whatsapp btn-sm"
@@ -1923,7 +2594,7 @@
                   Consultation
                 </button>
                 <a
-                  href="https://wa.me/919182258839?text=Hello!+I+want+to+book+an+appointment+at+Dr.+Renu's+Clinic"
+                  href="https://wa.me/917981598509?text=Hello!+I+want+to+book+an+appointment+at+Dr.+Renu's+Clinic"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-whatsapp btn-lg"
@@ -1931,11 +2602,11 @@
                   <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Booking
                 </a>
                 <a
-                  href="tel:+919182258839"
+                  href="tel:+917981598509"
                   class="btn btn-outline btn-lg"
                   style="color: #ffffff; border-color: rgba(255, 255, 255, 0.3)"
                 >
-                  <i class="fa-solid fa-phone"></i> +91 91822 58839
+                  <i class="fa-solid fa-phone"></i> +91 79815 98509
                 </a>
               </div>
             </div>
@@ -1982,20 +2653,21 @@
             </div>
             <div class="footer-social-links">
               <a
-                href="https://wa.me/919182258839"
+                href="https://wa.me/917981598509"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 ><i class="fa-brands fa-whatsapp"></i
               ></a>
               <a
-                href="https://maps.google.com/?cid=2154363805800894110"
+                href="https://maps.google.com/?cid=14052167688418616792"
+                data-clinic-field="mapUrl"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Google Maps Location"
                 ><i class="fa-solid fa-map-location-dot"></i
               ></a>
-              <a href="tel:+919182258839" aria-label="Phone Call"
+              <a href="tel:+917981598509" aria-label="Phone Call"
                 ><i class="fa-solid fa-phone"></i
               ></a>
             </div>
@@ -2061,24 +2733,25 @@
           <div class="footer-col">
             <h4 class="footer-heading">Clinic Address</h4>
             <address class="footer-contact-info">
-              <p>
-                <i class="fa-solid fa-location-dot"></i> LAXMAREDDY RESIDENCY,
-                Laxma reddy residency, Sai baba temple, 55-5/7/G1, road, beside
-                Life Spring Hospitals, opposite to Studioseven family saloon,
-                Buddha Nagar Colony, Mallikarjuna Nagar, Boduppal, Hyderabad,
-                Telangana 500092
+              <p data-clinic-address>
+                <i class="fa-solid fa-location-dot"></i>
+                <span data-clinic-field="fullAddress"
+                  >Shop NO. 2, sanjana amrutha nilayam, Plot No.10-90/2,
+                  opposite to srikara &amp; miracle hospitals, Om Vihar Colony,
+                  Medipally, Canara Nagar, Hyderabad, Telangana 500098</span
+                >
               </p>
               <p>
                 <i class="fa-solid fa-phone"></i>
-                <a href="tel:+919182258839">+91 91822 58839</a>
+                <a href="tel:+917981598509">+91 79815 98509</a>
               </p>
               <p>
                 <i class="fa-brands fa-whatsapp"></i>
                 <a
-                  href="https://wa.me/919182258839"
+                  href="https://wa.me/917981598509"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >+91 91822 58839</a
+                  >+91 79815 98509</a
                 >
               </p>
               <p>
@@ -2087,7 +2760,8 @@
               </p>
             </address>
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0"
+              href="https://www.google.com/maps/dir/?api=1&destination=Dr.Renu%27s+physiotherapy+%26+chiropractic+clinic%2C+Shop+NO.+2%2C+sanjana+amrutha+nilayam%2C+Plot+No.10-90%2F2%2C+opposite+to+srikara+%26+miracle+hospitals%2C+Om+Vihar+Colony%2C+Medipally%2C+Canara+Nagar%2C+Hyderabad%2C+Telangana+500098&destination_place_id=ChIJLTPjl6WfyzsR2OVpoA9UA8M"
+              data-clinic-field="directionsUrl"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-secondary btn-sm"
@@ -2118,12 +2792,12 @@
 
     <!-- Mobile Sticky Bottom Action Bar -->
     <div class="mobile-sticky-bar">
-      <a href="tel:+919182258839" class="sticky-action-item">
+      <a href="tel:+917981598509" class="sticky-action-item">
         <i class="fa-solid fa-phone"></i>
         <span>Call</span>
       </a>
       <a
-        href="https://wa.me/919182258839?text=Hello+Dr.+Renu's+Clinic!+I+want+to+book+an+appointment"
+        href="https://wa.me/917981598509?text=Hello+Dr.+Renu's+Clinic!+I+want+to+book+an+appointment"
         target="_blank"
         rel="noopener noreferrer"
         class="sticky-action-item highlight-wa"
@@ -2136,7 +2810,8 @@
         <span>Book</span>
       </button>
       <a
-        href="https://maps.google.com/?cid=2154363805800894110"
+        href="https://maps.google.com/?cid=14052167688418616792"
+        data-clinic-field="mapUrl"
         target="_blank"
         rel="noopener noreferrer"
         class="sticky-action-item"
