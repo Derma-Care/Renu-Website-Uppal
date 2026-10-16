@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Photo Gallery &amp; Clinical Facility | Dr. Renu's Chiropractic,
+      Osteopathy &amp; Physiotherapy Clinic
+    </title>
+    <meta
+      name="description"
+      content="Explore inside Dr. Renu's Chiropractic &amp; Physiotherapy Clinic in Boduppal, Hyderabad. View our modern treatment suites, spinal traction beds, rehabilitation gymnasium, and advanced electrotherapy units."
+    />
+    <link rel="canonical" href="http://localhost:3000/gallery.html" />
+    <link rel="icon" type="image/png" href="images/clinic-logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css?v=4.2" />
+  </head>
+  <body data-page="gallery">
+    <!-- Rock-Solid Sticky Header Wrapper (Zero Swing, Never Jumps) -->
+    <div class="site-header-sticky-wrapper">
+      <!-- Top Notification Strip -->
+      <div class="top-bar">
+        <div class="container top-bar-inner">
+          <div class="top-bar-left">
+            <a href="tel:+919182258839" class="top-bar-link">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 91822 58839</span>
+            </a>
+            <span class="top-bar-divider">|</span>
+            <div class="top-bar-location">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Boduppal, Hyderabad (Beside LifeSpring Hospital)</span>
+            </div>
+          </div>
+          <div class="top-bar-right">
+            <span class="live-status-pill" data-live-status>
+              <span class="live-status-dot"></span> Checking Clinic Hours...
+            </span>
+            <button
+              class="topbar-hours-btn"
+              data-open-hours-modal
+              aria-label="View Opening Hours"
+            >
+              <i class="fa-regular fa-clock"></i> Hours
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Primary Header & Navigation -->
+      <header class="site-header">
+        <div class="container header-inner">
+          <!-- Brand Logo -->
+          <a
+            href="index.html"
+            class="brand-logo"
+            aria-label="Dr. Renu's Clinic Homepage"
+          >
+            <div class="brand-symbol">
+              <img
+                src="images/clinic-logo.png"
+                alt="Dr. Renu's Clinic Logo"
+                class="brand-logo-img"
+              />
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-title">DR. RENU'S</span>
+              <span class="brand-subtitle"
+                >Chiropractic &amp; Physiotherapy</span
+              >
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Menu -->
+          <nav class="nav-desktop" aria-label="Main Navigation">
+            <ul class="nav-links">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li>
+                <a href="products-services.html" class="nav-link"
+                  >Products &amp; Services</a
+                >
+              </li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+              </li>
+              <li><a href="posts.html" class="nav-link">Posts</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Header Action CTAs -->
+          <div class="header-actions">
+            <button class="btn btn-primary" data-open-booking-modal>
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>Book Consultation</span>
+            </button>
+            <button
+              class="menu-toggle-btn"
+              aria-label="Open Mobile Menu"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" aria-hidden="true">
+      <div class="drawer-content">
+        <div class="drawer-header">
+          <div class="brand-logo">
+            <div class="brand-symbol">
+              <img
+                src="images/clinic-logo.png"
+                alt="Dr. Renu's Clinic Logo"
+                class="brand-logo-img"
+              />
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-title">DR. RENU'S</span>
+              <span class="brand-subtitle">Clinic Hyderabad</span>
+            </div>
+          </div>
+          <button class="mobile-nav-close" aria-label="Close Mobile Navigation">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="drawer-status">
+          <span class="live-status-pill" data-live-status>
+            <span class="live-status-dot"></span> Checking Hours...
+          </span>
+        </div>
+
+        <nav class="drawer-nav">
+          <ul>
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li>
+              <a href="products-services.html"
+                ><i class="fa-solid fa-stethoscope"></i> Products &amp;
+                Services</a
+              >
+            </li>
+            <li>
+              <a href="about.html"
+                ><i class="fa-solid fa-user-doctor"></i> About Doctors &amp;
+                Clinic</a
+              >
+            </li>
+            <li>
+              <a href="gallery.html" class="active"
+                ><i class="fa-solid fa-images"></i> Photo Gallery</a
+              >
+            </li>
+            <li>
+              <a href="posts.html"
+                ><i class="fa-solid fa-newspaper"></i> Clinical Health Posts</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fa-solid fa-envelope"></i> Contact &amp; Location</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="drawer-actions">
+          <button class="btn btn-primary btn-block" data-open-booking-modal>
+            <i class="fa-regular fa-calendar-check"></i> Book Consultation
+          </button>
+          <a href="tel:+919182258839" class="btn btn-secondary btn-block">
+            <i class="fa-solid fa-phone"></i> Call +91 91822 58839
+          </a>
+          <a
+            href="https://wa.me/919182258839?text=Hello+Dr.+Renu's+Clinic!+I+want+to+book+an+appointment."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp btn-block"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+        <div class="drawer-info">
+          <div>
+            <i class="fa-solid fa-location-dot"></i> Laxma Reddy Residency,
+            Boduppal
+          </div>
+          <div>
+            <i class="fa-solid fa-clock"></i> Mon-Sat: 9am-9pm | Sun: 9am-1pm
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- Gallery Hero Section -->
+      <section class="gallery-hero-section">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Photo Gallery</span>
+          </div>
+
+          <div class="gallery-hero-header text-center">
+            <span class="section-tag"
+              ><i class="fa-brands fa-google"></i> Google Verified Photos</span
+            >
+            <h1 class="page-title">Inside Dr. Renu's Clinic Facility</h1>
+            <p class="page-subtitle">
+              Tour our sterile treatment rooms, advanced chiropractic
+              decompression tables, electrotherapy suites, and rehabilitation
+              gym in Boduppal, Hyderabad.
+            </p>
+
+            <!-- Verified Badges Row -->
+            <div class="gallery-stats-banner">
+              <div class="stat-pill">
+                <i class="fa-solid fa-star star-gold"></i>
+                <span
+                  ><strong><span data-google-rating>4.8</span> / 5.0</strong>
+                  Rating</span
+                >
+              </div>
+              <a
+                href="#reviews"
+                class="stat-pill stat-pill-link"
+                title="Click to view verified Google patient reviews"
+              >
+                <i class="fa-solid fa-comments"></i>
+                <span
+                  ><strong><span data-google-review-count>129+</span></strong>
+                  Patient Reviews
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style="font-size: 0.75rem; margin-left: 3px"
+                  ></i
+                ></span>
+              </a>
+              <div class="stat-pill">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span><strong>100% Sanitized</strong> Suites</span>
+              </div>
+              <div class="stat-pill">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Boduppal, Hyderabad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Full Gallery Cards Grid -->
+      <section class="section full-gallery-section">
+        <div class="container">
+          <div class="full-gallery-grid" id="full-gallery-grid">
+            <div class="gallery-skeleton">
+              <div class="skeleton-shimmer"></div>
+              <i class="fa-solid fa-cloud-arrow-down fa-bounce"></i
+              ><span>Loading Live Google Photos...</span>
+            </div>
+            <div class="gallery-skeleton">
+              <div class="skeleton-shimmer"></div>
+            </div>
+            <div class="gallery-skeleton">
+              <div class="skeleton-shimmer"></div>
+            </div>
+            <div class="gallery-skeleton">
+              <div class="skeleton-shimmer"></div>
+            </div>
+            <div class="gallery-skeleton">
+              <div class="skeleton-shimmer"></div>
+            </div>
+            <div class="gallery-skeleton">
+              <div class="skeleton-shimmer"></div>
+            </div>
+          </div>
+
+          <!-- Gallery Action Banner -->
+          <div class="gallery-bottom-cta">
+            <div class="cta-inner">
+              <div class="cta-content">
+                <h3>Experience Expert Spine &amp; Joint Healing in Person</h3>
+                <p>
+                  Consult with Dr. Bharath Adla &amp; Dr. Roja Eepuri for
+                  advanced chiropractic adjustments, FDM, and personalized
+                  physiotherapy recovery.
+                </p>
+              </div>
+              <div class="cta-buttons">
+                <button class="btn btn-primary" data-open-booking-modal>
+                  <i class="fa-regular fa-calendar-check"></i> Book Consultation
+                </button>
+                <a
+                  href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x3bcb9f048bb8fc51:0x1de5d67791b88e9e!10e5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                  data-google-photos-link
+                  id="view-all-photos-btn"
+                >
+                  <i class="fa-brands fa-google"></i> View Photos on Google
+                </a>
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  <i class="fa-solid fa-location-arrow"></i> Get Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verified Patient Reviews Carousel Section -->
+      <section class="section reviews-section" id="reviews">
+        <div class="container">
+          <div class="reviews-header-row">
+            <div class="section-title-wrap">
+              <span class="section-tag"
+                ><i class="fa-brands fa-google"></i> Google Verified
+                Testimonials</span
+              >
+              <h2 class="section-title">
+                Verified Google Reviews (<span data-google-rating>4.8</span> ★)
+                <span class="google-live-badge"
+                  ><i class="fa-solid fa-circle-check"></i> Live Sync</span
+                >
+              </h2>
+              <p class="section-subtitle">
+                Real experiences and recovery stories from patients treated at
+                our Boduppal clinic.
+              </p>
+            </div>
+            <div class="reviews-nav-buttons">
+              <button
+                class="review-nav-btn review-prev"
+                id="review-prev"
+                aria-label="Previous Review"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button
+                class="review-nav-btn review-next"
+                id="review-next"
+                aria-label="Next Review"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="reviews-carousel-wrapper">
+            <div class="reviews-track" id="dynamic-reviews-track">
+              <div class="review-card review-skeleton">
+                <div class="skeleton-shimmer"></div>
+                <span>Fetching live verified reviews from Google...</span>
+              </div>
+              <div class="review-card review-skeleton">
+                <div class="skeleton-shimmer"></div>
+              </div>
+              <div class="review-card review-skeleton">
+                <div class="skeleton-shimmer"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews-footer-action text-center">
+            <a
+              href="https://www.google.com/maps/place//data=!4m4!3m3!1s0x3bcb9f048bb8fc51:0x1de5d67791b88e9e!9m1!1b1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+              id="view-all-reviews-btn"
+              data-google-reviews-link
+            >
+              <i class="fa-brands fa-google"></i> Read All
+              <span data-google-review-count>129+</span> Reviews on Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Overview -->
+          <div class="footer-col footer-col-brand">
+            <div class="brand-logo footer-brand">
+              <div class="brand-symbol">
+                <img
+                  src="images/clinic-logo.png"
+                  alt="Dr. Renu's Clinic Logo"
+                  class="brand-logo-img"
+                />
+              </div>
+              <div class="brand-text-block">
+                <span class="brand-title">DR. RENU'S</span>
+                <span class="brand-subtitle"
+                  >Chiropractic &amp; Physiotherapy</span
+                >
+              </div>
+            </div>
+            <p class="footer-about">
+              Leading center for non-invasive spine care, osteopathic
+              corrections, fascial therapy (FDM), and comprehensive physical
+              rehabilitation in Boduppal, Hyderabad.
+            </p>
+            <div class="footer-rating-badge">
+              <div class="stars-row">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <span
+                ><strong><span data-google-rating>4.8</span>★</strong> (<span data-google-review-count>129+</span> Verified Reviews on Google)</span
+              >
+            </div>
+            <div class="footer-social-links">
+              <a
+                href="https://wa.me/919182258839"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://maps.google.com/?cid=2154363805800894110"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Google Maps Location"
+                ><i class="fa-solid fa-map-location-dot"></i
+              ></a>
+              <a href="tel:+919182258839" aria-label="Phone Call"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="products-services.html">Products &amp; Services</a>
+              </li>
+              <li><a href="about.html">About Doctors &amp; Clinic</a></li>
+              <li><a href="gallery.html">Clinical Photo Gallery</a></li>
+              <li><a href="posts.html">Health &amp; Wellness Posts</a></li>
+              <li><a href="contact.html">Contact &amp; Directions</a></li>
+              <li>
+                <button class="footer-btn-link" data-open-hours-modal>
+                  View Opening Hours
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Key Treatments -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Key Treatments</h4>
+            <ul class="footer-links-list">
+              <li>
+                <a href="products-services.html#chiropractic-treatment"
+                  >Chiropractic Adjustment</a
+                >
+              </li>
+              <li>
+                <a href="products-services.html#sciatica-treatment"
+                  >Sciatica &amp; Disc Herniation</a
+                >
+              </li>
+              <li>
+                <a href="products-services.html#joint-pain-therapy"
+                  >Joint &amp; Arthritis Relief</a
+                >
+              </li>
+              <li>
+                <a href="products-services.html#fdm-fascial-distortion"
+                  >Fascial Distortion Model (FDM)</a
+                >
+              </li>
+              <li>
+                <a href="products-services.html#neuro-rehabilitation"
+                  >Neurological Rehab &amp; Stroke</a
+                >
+              </li>
+              <li>
+                <a href="products-services.html#pediatric-physiotherapy"
+                  >Pediatric Physiotherapy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact & Location Info -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Clinic Address</h4>
+            <address class="footer-contact-info">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> LAXMAREDDY RESIDENCY,
+                Laxma reddy residency, Sai baba temple, 55-5/7/G1, road, beside
+                Life Spring Hospitals, opposite to Studioseven family saloon,
+                Buddha Nagar Colony, Mallikarjuna Nagar, Boduppal, Hyderabad,
+                Telangana 500092
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+919182258839">+91 91822 58839</a>
+              </p>
+              <p>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a
+                  href="https://wa.me/919182258839"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >+91 91822 58839</a
+                >
+              </p>
+              <p>
+                <i class="fa-regular fa-clock"></i> Mon–Sat: 9:00 AM – 9:00
+                PM<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sun: 9:00 AM – 1:00 PM
+              </p>
+            </address>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary btn-sm"
+              style="margin-top: 10px"
+            >
+              <i class="fa-solid fa-directions"></i> Get Directions
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-strip">
+          <p>
+            &copy; 2026 Dr. Renu's Chiropractic / Osteopathy &amp; Physiotherapy
+            Clinic. All Rights Reserved.
+          </p>
+          <p class="footer-credit">
+            Developed by
+            <a
+              href="https://www.chiselontechnologies.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Chiselon Technologies Private Limited</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Action Bar -->
+    <div class="mobile-sticky-bar">
+      <a href="tel:+919182258839" class="sticky-action-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Call</span>
+      </a>
+      <a
+        href="https://wa.me/919182258839?text=Hello+Dr.+Renu's+Clinic!+I+want+to+book+an+appointment"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="sticky-action-item highlight-wa"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <button class="sticky-action-item highlight-book" data-open-booking-modal>
+        <i class="fa-regular fa-calendar-check"></i>
+        <span>Book</span>
+      </button>
+      <a
+        href="https://www.google.com/maps/dir/?api=1&destination=DR.RENU%27S+CHIROPRACTIC+%2F+OSTEOPATHY+%26+PHYSIOTHERAPY+CLINIC%2C+55-5%2F7%2FG1+LAXMAREDDY+RESIDENCY+Sai+baba+temple+road+Laxma+reddy+residency%2C+beside+Life+Spring+Hospitals%2C+opposite+Opposite+to+Studioseven+family+saloon%2C+Hyderabad%2C+Telangana%2C+500092&destination_place_id=ChIJUfy4iwSfyzsRno64kXfW5R0"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="sticky-action-item"
+      >
+        <i class="fa-solid fa-location-arrow"></i>
+        <span>Maps</span>
+      </a>
+    </div>
+
+    <!-- Dialog Modal 1: Clinic Operating Hours -->
+    <dialog id="hours-dialog" class="custom-dialog">
+      <div class="dialog-card">
+        <div class="dialog-header">
+          <div class="dialog-title-block">
+            <i class="fa-regular fa-clock dialog-header-icon"></i>
+            <h3>Clinic Operating Hours</h3>
+          </div>
+          <button
+            class="dialog-close-btn"
+            data-close-dialog
+            aria-label="Close dialog"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="dialog-body">
+          <div class="dialog-live-status-row">
+            <span class="live-status-pill" data-live-status>
+              <span class="live-status-dot"></span> Checking Status...
+            </span>
+          </div>
+          <div class="hours-table">
+            <div class="hours-row">
+              <span class="day-col">Monday</span
+              ><span class="time-col">9:00 AM – 9:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day-col">Tuesday</span
+              ><span class="time-col">9:00 AM – 9:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day-col">Wednesday</span
+              ><span class="time-col">9:00 AM – 9:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day-col">Thursday</span
+              ><span class="time-col">9:00 AM – 9:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day-col">Friday</span
+              ><span class="time-col">9:00 AM – 9:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day-col">Saturday</span
+              ><span class="time-col">9:00 AM – 9:00 PM</span>
+            </div>
+            <div class="hours-row weekend">
+              <span class="day-col">Sunday</span
+              ><span class="time-col">9:00 AM – 1:00 PM</span>
+            </div>
+          </div>
+          <p class="dialog-note">
+            <i class="fa-solid fa-circle-info"></i> For urgent appointments
+            outside standard hours or holiday schedules, please contact us via
+            WhatsApp.
+          </p>
+        </div>
+        <div class="dialog-footer">
+          <button
+            class="btn btn-primary btn-block"
+            data-open-booking-modal
+            data-close-dialog
+          >
+            <i class="fa-regular fa-calendar-check"></i> Book Consultation Slot
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Dialog Modal 2: Appointment Consultation Booking -->
+    <dialog id="booking-dialog" class="custom-dialog">
+      <div class="dialog-card">
+        <div class="dialog-header">
+          <div class="dialog-title-block">
+            <i class="fa-regular fa-calendar-check dialog-header-icon"></i>
+            <h3>Book Consultation</h3>
+          </div>
+          <button
+            class="dialog-close-btn"
+            data-close-dialog
+            aria-label="Close dialog"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <form data-booking-form class="dialog-form">
+          <div class="dialog-body">
+            <p class="dialog-form-intro">
+              Submit your details below to schedule a consultation with
+              <strong>Dr. Bharath Adla</strong> or
+              <strong>Dr. Roja Eepuri</strong> at our Boduppal Clinic.
+            </p>
+
+            <div class="form-group">
+              <label for="g-book-name"
+                >Patient Full Name <span class="req">*</span></label
+              >
+              <input
+                type="text"
+                id="g-book-name"
+                name="name"
+                required
+                placeholder="e.g. Ramesh Kumar"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="g-book-phone"
+                >Mobile / WhatsApp Number <span class="req">*</span></label
+              >
+              <input
+                type="tel"
+                id="g-book-phone"
+                name="phone"
+                required
+                placeholder="e.g. 9876543210"
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="g-book-doctor">Preferred Specialist</label>
+                <select id="g-book-doctor" name="doctor">
+                  <option
+                    value="Dr. Bharath Adla (Master's in Chiropractic & Spine Specialist)"
+                  >
+                    Dr. Bharath Adla (Spine &amp; Chiropractic)
+                  </option>
+                  <option value="Dr. Roja Eepuri (MPT Ortho & Pain Specialist)">
+                    Dr. Roja Eepuri (MPT Ortho &amp; Pain)
+                  </option>
+                  <option value="Any Available Specialist">
+                    Any Available Specialist
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="g-book-time">Preferred Time Slot</label>
+                <select id="g-book-time" name="time_slot">
+                  <option value="Morning (9:00 AM – 1:00 PM)">
+                    Morning (9:00 AM – 1:00 PM)
+                  </option>
+                  <option value="Afternoon (2:00 PM – 5:00 PM)">
+                    Afternoon (2:00 PM – 5:00 PM)
+                  </option>
+                  <option value="Evening (5:00 PM – 9:00 PM)">
+                    Evening (5:00 PM – 9:00 PM)
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="g-book-service">Select Treatment or Condition</label>
+              <select id="g-book-service" name="service">
+                <option value="General Spine & Pain Consultation">
+                  General Spine &amp; Pain Consultation
+                </option>
+                <option value="Chiropractic & Osteopathy Adjustment">
+                  Chiropractic &amp; Osteopathy Adjustment
+                </option>
+                <option value="Sciatica & Disc Herniation Treatment">
+                  Sciatica &amp; Disc Herniation Treatment
+                </option>
+                <option value="Neck & Cervical Spondylosis Therapy">
+                  Neck &amp; Cervical Spondylosis Therapy
+                </option>
+                <option value="Joint & Musculoskeletal Pain Therapy">
+                  Joint &amp; Musculoskeletal Pain Therapy
+                </option>
+                <option value="FDM (Fascial Distortion Model)">
+                  FDM (Fascial Distortion Model)
+                </option>
+                <option value="Neurological Rehabilitation">
+                  Neurological Rehabilitation
+                </option>
+                <option value="Post-Surgical Orthopedic Rehabilitation">
+                  Post-Surgical Orthopedic Rehabilitation
+                </option>
+                <option value="Sports Injury Recovery & Conditioning">
+                  Sports Injury Recovery &amp; Conditioning
+                </option>
+                <option value="Posture Correction & Ergonomic Advice">
+                  Posture Correction &amp; Ergonomic Advice
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="g-book-date">Preferred Date</label>
+              <input type="date" id="g-book-date" name="date" />
+            </div>
+
+            <div class="form-group">
+              <label for="g-book-notes"
+                >Brief Description of Pain or Injury</label
+              >
+              <textarea
+                id="g-book-notes"
+                name="notes"
+                rows="3"
+                placeholder="Tell us about the location of pain, duration, or previous medical history..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="dialog-footer">
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-brands fa-whatsapp"></i> Confirm &amp; Send to
+              WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/google-places.js"></script>
+  </body>
+</html>
